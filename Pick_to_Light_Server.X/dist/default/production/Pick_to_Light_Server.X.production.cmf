@@ -1,0 +1,626 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 E E 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+$dist/default/production\Pick_to_Light_Server.X.production.o
+cinit CODE 0 5E2 5E2 1A 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+intcode_body CODE 0 5FC 5FC 1A 1 2
+text0 CODE 0 38C 38C 12A 1 2
+text1 CODE 0 640 640 E 1 2
+text2 CODE 0 62C 62C 14 1 2
+text3 CODE 0 564 564 48 1 2
+text4 CODE 0 514 514 50 1 2
+text5 CODE 0 12 12 37A 1 2
+text6 CODE 0 4B6 4B6 5E 1 2
+text7 CODE 0 616 616 16 1 2
+text8 CODE 0 5AC 5AC 36 1 2
+cstackCOMRAM COMRAM 1 29 29 20 1 1
+temp COMRAM 1 49 49 1 1 1
+intcode CODE 0 8 8 6 1 2
+bssCOMRAM COMRAM 1 1 1 28 1 1
+mediumconst MEDIUMCONST 0 2FDA 2FDA 26 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-5FF 1
+SFR D00-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-7 1
+CONST 64E-2FD9 1
+CONST 3000-3000 1
+SMALLCONST 64E-2FD9 1
+SMALLCONST 3000-3000 1
+CODE 4-7 1
+CODE 64E-2FD9 1
+CODE 3000-3000 1
+BIGRAM 4A-5FF 1
+BIGSFR D00-FFF 1
+COMRAM 4A-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 64E-2FD9 1
+MEDIUMCONST 3000-3000 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Pick_to_Light_Server.X.production.o
+8 intcode CODE >5718:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+8 intcode CODE >5:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\isr.c
+5FC intcode_body CODE >5:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\isr.c
+5FE intcode_body CODE >8:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\isr.c
+60C intcode_body CODE >11:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\isr.c
+610 intcode_body CODE >13:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\isr.c
+612 intcode_body CODE >15:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\isr.c
+5AC text8 CODE >91:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5AC text8 CODE >93:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5B0 text8 CODE >94:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5B2 text8 CODE >97:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5B6 text8 CODE >98:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5BA text8 CODE >100:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5BE text8 CODE >102:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5C2 text8 CODE >103:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5C6 text8 CODE >104:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5CA text8 CODE >105:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5CE text8 CODE >106:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5D2 text8 CODE >107:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5D6 text8 CODE >108:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5DA text8 CODE >109:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5DE text8 CODE >111:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5E0 text8 CODE >112:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+616 text7 CODE >30:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+618 text7 CODE >34:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+618 text7 CODE >37:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+626 text7 CODE >38:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+62A text7 CODE >39:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+4B6 text6 CODE >41:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+4B6 text6 CODE >43:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+4BA text6 CODE >45:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+4E2 text6 CODE >43:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+512 text6 CODE >49:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+12 text5 CODE >12:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+12 text5 CODE >15:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+24 text5 CODE >17:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+36 text5 CODE >19:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+52 text5 CODE >22:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+5E text5 CODE >23:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+60 text5 CODE >24:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+6C text5 CODE >25:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+70 text5 CODE >27:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+80 text5 CODE >29:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+86 text5 CODE >30:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+B4 text5 CODE >32:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+C0 text5 CODE >33:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+C4 text5 CODE >35:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+C6 text5 CODE >25:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+D8 text5 CODE >38:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+E4 text5 CODE >39:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+100 text5 CODE >42:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+110 text5 CODE >44:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+12E text5 CODE >45:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+144 text5 CODE >46:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+158 text5 CODE >48:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+164 text5 CODE >49:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+170 text5 CODE >50:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+192 text5 CODE >52:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+19E text5 CODE >56:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+19E text5 CODE >58:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+1A0 text5 CODE >59:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+1AC text5 CODE >60:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+1B0 text5 CODE >62:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+1C0 text5 CODE >64:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+1C6 text5 CODE >65:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+1F4 text5 CODE >67:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+200 text5 CODE >68:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+204 text5 CODE >70:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+206 text5 CODE >60:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+218 text5 CODE >73:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+224 text5 CODE >74:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+240 text5 CODE >77:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+250 text5 CODE >79:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+27C text5 CODE >80:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+292 text5 CODE >81:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+2B4 text5 CODE >83:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+2C0 text5 CODE >84:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+2CC text5 CODE >85:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+2FA text5 CODE >87:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+302 text5 CODE >88:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+302 text5 CODE >90:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+30A text5 CODE >91:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+312 text5 CODE >95:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+324 text5 CODE >98:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+328 text5 CODE >99:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+32C text5 CODE >100:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+330 text5 CODE >101:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+334 text5 CODE >102:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+338 text5 CODE >103:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+33C text5 CODE >104:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+340 text5 CODE >105:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+344 text5 CODE >107:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+348 text5 CODE >109:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+350 text5 CODE >111:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+35A text5 CODE >112:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+37A text5 CODE >113:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+382 text5 CODE >114:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+38A text5 CODE >117:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+514 text4 CODE >59:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+514 text4 CODE >61:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+514 text4 CODE >63:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+522 text4 CODE >65:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+526 text4 CODE >66:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+52A text4 CODE >67:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+52E text4 CODE >68:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+532 text4 CODE >69:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+536 text4 CODE >70:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+53A text4 CODE >71:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+53E text4 CODE >72:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+542 text4 CODE >73:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+546 text4 CODE >74:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+54A text4 CODE >75:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+54E text4 CODE >76:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+552 text4 CODE >77:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+556 text4 CODE >79:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+558 text4 CODE >80:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+55A text4 CODE >82:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+560 text4 CODE >86:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+562 text4 CODE >88:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+564 text3 CODE >15:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+564 text3 CODE >18:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+566 text3 CODE >19:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+568 text3 CODE >23:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+56E text3 CODE >26:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+580 text3 CODE >29:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+582 text3 CODE >32:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+586 text3 CODE >33:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+58A text3 CODE >34:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+58E text3 CODE >40:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+594 text3 CODE >46:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+598 text3 CODE >47:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+59A text3 CODE >48:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+59E text3 CODE >49:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5A2 text3 CODE >52:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5A8 text3 CODE >55:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+5AA text3 CODE >56:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\can.c
+62C text2 CODE >4:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+62C text2 CODE >7:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+62E text2 CODE >8:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+630 text2 CODE >11:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+632 text2 CODE >12:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+634 text2 CODE >16:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+636 text2 CODE >22:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+63A text2 CODE >24:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+63C text2 CODE >25:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+63E text2 CODE >28:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\uart.c
+640 text1 CODE >4:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+640 text1 CODE >6:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+642 text1 CODE >7:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+644 text1 CODE >8:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+648 text1 CODE >9:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+64C text1 CODE >10:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+38C text0 CODE >119:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+38C text0 CODE >121:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+390 text0 CODE >125:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+394 text0 CODE >127:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3A8 text0 CODE >129:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3B4 text0 CODE >130:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3C0 text0 CODE >133:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3C4 text0 CODE >134:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3C8 text0 CODE >135:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3CC text0 CODE >136:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3D0 text0 CODE >137:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3D2 text0 CODE >140:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3D6 text0 CODE >141:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3DA text0 CODE >142:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3DE text0 CODE >143:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3E2 text0 CODE >144:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3E4 text0 CODE >146:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3F0 text0 CODE >147:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+3FC text0 CODE >148:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+406 text0 CODE >149:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+412 text0 CODE >150:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+41E text0 CODE >151:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+428 text0 CODE >152:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+434 text0 CODE >154:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+43C text0 CODE >156:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+446 text0 CODE >157:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+466 text0 CODE >159:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+46A text0 CODE >162:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+47C text0 CODE >164:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+48C text0 CODE >166:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+494 text0 CODE >168:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+49C text0 CODE >169:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+4A4 text0 CODE >170:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+4A6 text0 CODE >172:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+4AC text0 CODE >173:C:\Users\Anubhav Anand\MPLABXProjects\Pick_to_Light_Server.X\main.c
+5E2 cinit CODE >3614:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5E2 cinit CODE >3616:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5E2 cinit CODE >3619:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5E2 cinit CODE >3653:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5E6 cinit CODE >3654:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5E8 cinit CODE >3655:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5E8 cinit CODE >3656:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5EA cinit CODE >3657:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5EC cinit CODE >3658:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5EE cinit CODE >3664:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5EE cinit CODE >3666:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5F0 cinit CODE >3667:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5F2 cinit CODE >3669:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5F4 cinit CODE >3670:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5F6 cinit CODE >3671:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+5F8 cinit CODE >3672:C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_i 25 0 COMRAM 1 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+putch@byte 29 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__Lmediumconst 2FDA 0 MEDIUMCONST 0 mediumconst dist/default/production\Pick_to_Light_Server.X.production.o
+__Hspace_0 3000 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Hspace_1 4A 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Pick_to_Light_Server.X.production.o
+__mediumconst 2FDA 0 MEDIUMCONST 0 mediumconst dist/default/production\Pick_to_Light_Server.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Pick_to_Light_Server.X.production.o
+_ch 28 0 COMRAM 1 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+_tx 21 0 COMRAM 1 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Pick_to_Light_Server.X.production.o
+main@j 47 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Pick_to_Light_Server.X.production.o
+_BRGH 7D62 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_CREN 7D5C 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_PEIE 7F96 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RCIE 7CED 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RCIF 7CF5 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_SPEN 7D5F 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXIF 7CF4 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+_flag 23 0 COMRAM 1 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+_main 38C 0 CODE 0 text0 dist/default/production\Pick_to_Light_Server.X.production.o
+_puts 4B6 0 CODE 0 text6 dist/default/production\Pick_to_Light_Server.X.production.o
+btemp 49 0 COMRAM 1 temp dist/default/production\Pick_to_Light_Server.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+start E 0 CODE 0 init C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+puts@s 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\Pick_to_Light_Server.X.production.o
+ttemp5 4A 0 COMRAM 1 temp dist/default/production\Pick_to_Light_Server.X.production.o
+ttemp6 4D 0 COMRAM 1 temp dist/default/production\Pick_to_Light_Server.X.production.o
+ttemp7 51 0 COMRAM 1 temp dist/default/production\Pick_to_Light_Server.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+_init_can 564 0 CODE 0 text3 dist/default/production\Pick_to_Light_Server.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Pick_to_Light_Server.X.production.o
+wtemp8 4A 0 COMRAM 1 temp dist/default/production\Pick_to_Light_Server.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Pick_to_Light_Server.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of_init_can 5AC 0 CODE 0 text3 dist/default/production\Pick_to_Light_Server.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+_CANCON F6F 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Pick_to_Light_Server.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Pick_to_Light_Server.X.production.o
+main@pid 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+main@ust 42 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0DLC F45 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0REQ 7A03 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Hmediumconst 3000 0 MEDIUMCONST 0 mediumconst dist/default/production\Pick_to_Light_Server.X.production.o
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\Pick_to_Light_Server.X.production.o
+_init_config 640 0 CODE 0 text1 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\Pick_to_Light_Server.X.production.o
+start_initialization 5E2 0 CODE 0 cinit dist/default/production\Pick_to_Light_Server.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Pick_to_Light_Server.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0D0 F66 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0D1 F67 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0D2 F68 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0D3 F69 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0D4 F6A 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0D5 F6B 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0D6 F6C 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0D7 F6D 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0IF 7D20 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TRISB2 7C9A 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TRISB3 7C9B 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TRISC6 7CA6 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TRISC7 7CA7 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0D0 F46 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0D1 F47 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0D2 F48 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0D3 F49 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0D4 F4A 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0D5 F4B 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0D6 F4C 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0D7 F4D 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Pick_to_Light_Server.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\Pick_to_Light_Server.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\Pick_to_Light_Server.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\Pick_to_Light_Server.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Pick_to_Light_Server.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Pick_to_Light_Server.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Pick_to_Light_Server.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Pick_to_Light_Server.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Pick_to_Light_Server.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Pick_to_Light_Server.X.production.o
+__smallconst 2FDA 0 MEDIUMCONST 0 mediumconst dist/default/production\Pick_to_Light_Server.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\Pick_to_Light_Server.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Pick_to_Light_Server.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\Pick_to_Light_Server.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\Pick_to_Light_Server.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\Pick_to_Light_Server.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Pick_to_Light_Server.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Pick_to_Light_Server.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Pick_to_Light_Server.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Pick_to_Light_Server.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Pick_to_Light_Server.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\Pick_to_Light_Server.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\Pick_to_Light_Server.X.production.o
+__Hinit 12 0 CODE 0 init dist/default/production\Pick_to_Light_Server.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Pick_to_Light_Server.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Pick_to_Light_Server.X.production.o
+__Htemp 4A 0 COMRAM 1 temp dist/default/production\Pick_to_Light_Server.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\Pick_to_Light_Server.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Pick_to_Light_Server.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\Pick_to_Light_Server.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\Pick_to_Light_Server.X.production.o
+__Linit E 0 CODE 0 init dist/default/production\Pick_to_Light_Server.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Pick_to_Light_Server.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltemp 49 0 COMRAM 1 temp dist/default/production\Pick_to_Light_Server.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\Pick_to_Light_Server.X.production.o
+int$flags 49 0 COMRAM 1 temp dist/default/production\Pick_to_Light_Server.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\Pick_to_Light_Server.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Pick_to_Light_Server.X.production.o
+_GIE 7F97 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__S0 3000 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__S1 4A 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_isr 8 0 CODE 0 intcode dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Pick_to_Light_Server.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Pick_to_Light_Server.X.production.o
+_ECANCON F77 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of_isr 616 0 CODE 0 intcode_body dist/default/production\Pick_to_Light_Server.X.production.o
+int_func 5FC 0 CODE 0 intcode_body dist/default/production\Pick_to_Light_Server.X.production.o
+_enter_flag 27 0 COMRAM 1 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+_can_transmit 5AC 0 CODE 0 text8 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Pick_to_Light_Server.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\Pick_to_Light_Server.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Pick_to_Light_Server.X.production.o
+_can_receive 514 0 CODE 0 text4 dist/default/production\Pick_to_Light_Server.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of_init_uart 640 0 CODE 0 text2 dist/default/production\Pick_to_Light_Server.X.production.o
+__pintcode_body 5FC 0 CODE 0 intcode_body dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\Pick_to_Light_Server.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\Pick_to_Light_Server.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0CON F60 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0DLC F65 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0FUL 7B07 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXFCON0 DD4 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Pick_to_Light_Server.X.production.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Pick_to_Light_Server.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Pick_to_Light_Server.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+_init_uart 62C 0 CODE 0 text2 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Pick_to_Light_Server.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+__end_of_init_config 64E 0 CODE 0 text1 dist/default/production\Pick_to_Light_Server.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+can_demo@j_119 33 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+can_demo@j_123 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+can_demo@j_124 35 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+can_demo@j_126 37 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\Pick_to_Light_Server.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\Pick_to_Light_Server.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Pick_to_Light_Server.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_send_arr E 0 COMRAM 1 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of_can_transmit 5E2 0 CODE 0 text8 dist/default/production\Pick_to_Light_Server.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+end_of_initialization 5EE 0 CODE 0 cinit dist/default/production\Pick_to_Light_Server.X.production.o
+_can_demo 12 0 CODE 0 text5 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Pick_to_Light_Server.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Pick_to_Light_Server.X.production.o
+can_demo@padding_122 31 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of_can_demo 38C 0 CODE 0 text5 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\Pick_to_Light_Server.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Pick_to_Light_Server.X.production.o
+_BRGCON1 F70 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_BRGCON2 F71 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_BRGCON3 F72 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0EIDH F43 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0EIDL F44 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0SIDH F41 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXB0SIDL F42 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__pcinit 5E2 0 CODE 0 cinit dist/default/production\Pick_to_Light_Server.X.production.o
+__ptext0 38C 0 CODE 0 text0 dist/default/production\Pick_to_Light_Server.X.production.o
+__ptext1 640 0 CODE 0 text1 dist/default/production\Pick_to_Light_Server.X.production.o
+__ptext2 62C 0 CODE 0 text2 dist/default/production\Pick_to_Light_Server.X.production.o
+__ptext3 564 0 CODE 0 text3 dist/default/production\Pick_to_Light_Server.X.production.o
+__ptext4 514 0 CODE 0 text4 dist/default/production\Pick_to_Light_Server.X.production.o
+__ptext5 12 0 CODE 0 text5 dist/default/production\Pick_to_Light_Server.X.production.o
+__ptext6 4B6 0 CODE 0 text6 dist/default/production\Pick_to_Light_Server.X.production.o
+__ptext7 616 0 CODE 0 text7 dist/default/production\Pick_to_Light_Server.X.production.o
+__ptext8 5AC 0 CODE 0 text8 dist/default/production\Pick_to_Light_Server.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Pick_to_Light_Server.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\Pick_to_Light_Server.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Pick_to_Light_Server.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Pick_to_Light_Server.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Pick_to_Light_Server.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+___param_bank 0 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\ANUBHA~1\AppData\Local\Temp\xcBsa70.1\driver_tmp_9.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of__initialization 5EE 0 CODE 0 cinit dist/default/production\Pick_to_Light_Server.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Pick_to_Light_Server.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Pick_to_Light_Server.X.production.o
+can_demo@padding 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__pcstackCOMRAM 29 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__pmediumconst 2FDA 0 MEDIUMCONST 0 mediumconst dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of_main 4B6 0 CODE 0 text0 dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of_puts 514 0 CODE 0 text6 dist/default/production\Pick_to_Light_Server.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\Pick_to_Light_Server.X.production.o
+_CANSTAT F6E 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RCREG FAE 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_SPBRG FAF 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_TXREG FAD 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of_putch 62C 0 CODE 0 text7 dist/default/production\Pick_to_Light_Server.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\Pick_to_Light_Server.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\Pick_to_Light_Server.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Pick_to_Light_Server.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\Pick_to_Light_Server.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\Pick_to_Light_Server.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0EIDH F63 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0EIDL F64 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0SIDH F61 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXB0SIDL F62 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_putch 616 0 CODE 0 text7 dist/default/production\Pick_to_Light_Server.X.production.o
+can_demo@j 39 0 COMRAM 1 cstackCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+_can_payload 1 0 COMRAM 1 bssCOMRAM dist/default/production\Pick_to_Light_Server.X.production.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Pick_to_Light_Server.X.production.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Pick_to_Light_Server.X.production.o
+__initialization 5E2 0 CODE 0 cinit dist/default/production\Pick_to_Light_Server.X.production.o
+_RXF0EIDH F02 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXF0EIDL F03 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXF0SIDH F00 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+_RXF0SIDL F01 0 ABS 0 - dist/default/production\Pick_to_Light_Server.X.production.o
+__end_of_can_receive 564 0 CODE 0 text4 dist/default/production\Pick_to_Light_Server.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Pick_to_Light_Server.X.production.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Pick_to_Light_Server.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Pick_to_Light_Server.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Pick_to_Light_Server.X.production.o
+__Hintcode E 0 CODE 0 intcode dist/default/production\Pick_to_Light_Server.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 1
+intcode 0 8 8 646 1
+bssCOMRAM 1 1 1 49 1
+mediumconst 0 2FDA 2FDA 26 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
